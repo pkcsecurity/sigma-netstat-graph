@@ -1,5 +1,7 @@
 # imb-deps
 
+![Yay for Sigma Graphs](https://github.com/pkcsecurity/sigma-netstat-graph/blob/cafee764e94a7bc076c10792c81d5c7d6d607f58/generated-graph.png)
+
 ## Installation
 
 Ask Ken for data.tar.gz, put in the top level and unzip.
