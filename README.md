@@ -1,36 +1,18 @@
 # imb-deps
 
-FIXME: description
-
 ## Installation
 
-Download from http://example.com/FIXME.
+Ask Ken for data.tar.gz, put in the top level and unzip.
 
 ## Usage
 
-FIXME: explanation
+1. run `lein repl`, run `(-main)`. This will take the netstat data in data/ and convert it to nodes/edges in sigma.json, inside `src/graph-sigma/build`
+2. go into src/graph-sigma/build, run an http server (ex. `http-server`)
+3. open your browser, go to localhost, and check it out!
 
-    $ java -jar imb-deps-0.1.0-standalone.jar [args]
+## Adding more netstats or netstat csv's
+1. CSV's were generated with `netstat -ano` on Windows. Filenames MUST have the form `<fully-qualified hostname>.csv`
+2. Netstats were run as `netstat -a` on Windows. Filenames MUST have the form `<fully-qualified hostname>`
 
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2017 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+## Limitations
+1. Only tested on Windows netstats :(
